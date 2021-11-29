@@ -7,7 +7,7 @@ It is work in progress
 The concepts behind user management are simple in IBM API Connect.
 It mixes the standard notion of Role Base Access Control and the notion of users defined in a user registry.
 Users are split in three levels, users with responsibilities on the API Cloud Management, on the provider organisations and the consumer organisations.
-It also implements a very important notion of what we call *Delegated model*. This approach allows to better control users and their responsibilities. A user (admin1) can delegate responsibilities to another user (user1), but admin1 does not have user1's responsibilities or access (or view). Ths allows is a very good basis on the principle found in GDPR, the need-to-know basis.
+It also implements a very important notion of what we call *Delegated model*. This approach allows to better control users and their responsibilities. A user (admin1) can delegate responsibilities to another user (user1), but admin1 does not have user1's responsibilities or access (or view). This allows is a very good basis on the principle found in GDPR, the need-to-know basis.
 
 Below the overall important concepts for user management.
 ![APIC concepts](./images/apic-concepts.png "APIC concepts")
