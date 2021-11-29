@@ -1,0 +1,31 @@
+version: 1
+
+dn: uid=org2admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2admin
+sn:org2admin
+mail: org2admin@fr.ibm.com
+uid: org2admin
+
+dn: uid=org2dev2,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2dev2
+sn:org2dev2
+mail: org2dev2@fr.ibm.com
+uid: org2dev2
+
+dn: uid=org2owner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2owner1
+sn:org2owner1
+mail: org2owner1@fr.ibm.com
+uid: org2owner1

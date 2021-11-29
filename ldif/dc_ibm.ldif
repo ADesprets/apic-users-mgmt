@@ -1,0 +1,249 @@
+version: 1
+
+dn: ou=groups,dc=ibm,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: groups
+
+dn: uid=cloudowner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: cloudowner1
+sn: cloudowner1
+mail: cloudowner1@fr.ibm.com
+uid: cloudowner1
+userPassword:: e1NTSEF9Ym9PczlqMExFYU9kZVJZUTdNbVFBL3NqNWVUeTdvUmI4V1d2ZWc9P
+ Q==
+
+dn: uid=publisher1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: publisher1
+sn: publisher1
+mail: publisher1@fr.ibm.com
+uid: publisher1
+userPassword:: e1NTSEF9Ym9PczlqMExFYU9kZVJZUTdNbVFBL3NqNWVUeTdvUmI4V1d2ZWc9P
+ Q==
+
+dn: uid=arnauld,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: arnauld
+sn: arnauld
+mail: arnauld_desprets@fr.ibm.com
+uid: arnauld
+userPassword:: e1NTSEF9THZETUZsZWxQOHZxRWw0RjNEQ0FJVXhFMlpINFJaWk1DZmQ1bGc9P
+ Q==
+
+dn: uid=apiadmin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: apiadmin
+sn: apiadmin
+mail: apiadmin@fr.ibm.com
+uid: apiadmin
+userPassword:: e1NTSEF9NjM1Y0JCOHBZeDgxek5lMkExY2hUMDRZTW1sWW5wZll3Sks0YXc9P
+ Q==
+
+dn: uid=org2admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2admin
+sn: org2admin
+mail: org2admin@fr.ibm.com
+uid: org2admin
+userPassword:: e1NTSEF9YmpBeThoQXVpTzM5cmZMNFBWK25qMjFUZFJBbmZPcmQ5V0hWMGc9P
+ Q==
+
+dn: uid=dev1org2owner,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: dev1org2owner
+sn: dev1org2owner
+mail: dev1org2owner@fr.ibm.com
+uid: dev1org2owner
+userPassword:: e1NTSEF9S25TdGJLeEN0MnNyWjVmS0s0ODl4Mm0xN2IwekpadUpjbUREeUE9P
+ Q==
+
+dn: uid=admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: admin
+sn: admin
+mail: admin@fr.ibm.com
+uid: admin
+userPassword:: e1NTSEF9Sk1aNnBtcmllMm8vY2tVQjIxcFA0ZXBZLzBLTG9TdnFTc2RuOFE9P
+ Q==
+
+dn: uid=org2owner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2owner1
+sn: org2owner1
+mail: org2owner1@fr.ibm.com
+uid: org2owner1
+userPassword:: e1NTSEF9azUyeGVRU3c3QmxPQnd0b1hHeXBaczdKRVRvcEZRWE93VGQ5Znc9P
+ Q==
+
+dn: ou=people,dc=ibm,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+dn: uid=org1admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1admin
+sn: org1admin
+mail: org1admin@fr.ibm.com
+uid: org1admin
+userPassword:: e1NTSEF9SXNvNGltSXZHTTRRRUdOTnhFVW4vQlQyRDBpb3lnbzdjZFNOTWc9P
+ Q==
+
+dn: cn=org1,ou=groups,dc=ibm,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: org1
+uniqueMember: uid=org1dev1,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org1dev2,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org1admin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org1owner1,ou=people,dc=ibm,dc=com
+
+dn: uid=myorgowner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: myorgowner1
+sn: myorgowner1
+mail: myorgowner1@fr.ibm.com
+uid: myorgowner1
+userPassword:: e1NTSEF9SmxZeDJCUmZlS3RJc1dPSDkxc2FFSG9OaXNqQmpnVDRKcU0rL2c9P
+ Q==
+
+dn: cn=ibm,ou=groups,dc=ibm,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: ibm
+uniqueMember: uid=admin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=apiadmin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=arnauld,ou=people,dc=ibm,dc=com
+uniqueMember: uid=developeur1,ou=people,dc=ibm,dc=com
+uniqueMember: uid=myorgowner1,ou=people,dc=ibm,dc=com
+
+dn: cn=org2,ou=groups,dc=ibm,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: org2
+uniqueMember: uid=org2admin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org2owner1,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org2dev2,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org2dev1,ou=people,dc=ibm,dc=com
+
+dn: uid=org1admin,uid=org1admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1admin
+sn: org1admin
+mail: org1admin@fr.ibm.com
+uid: org1admin
+userPassword:: e1NTSEF9SXNvNGltSXZHTTRRRUdOTnhFVW4vQlQyRDBpb3lnbzdjZFNOTWc9P
+ Q==
+
+dn: uid=developeur1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: developeur1
+sn: developeur1
+mail: developeur1@fr.ibm.com
+uid: developeur1
+userPassword:: e1NTSEF9cnJPY2N4eTR5ZGhveGd6ejgxK1FqTlM1WHVNVFR3SDczQzdNOUE9P
+ Q==
+
+dn: uid=org1owner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1owner1
+sn: org1owner1
+mail: org1owner1@fr.ibm.com
+uid: org1owner1
+userPassword:: e1NTSEF9a3VpbWc1a1RKOGxhYzVNTjRsRFh6WkdYR1hMNDlReHAxOGJqSlE9P
+ Q==
+
+dn: uid=dev1org1owner,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: dev1org1owner
+sn: dev1org1owner
+mail: dev1org1owner@fr.ibm.com
+uid: dev1org1owner
+userPassword:: e1NTSEF9eW5Obnp4NmhPMXd4NGdDYWVnbk5zMld5VmxYTUQ3SFg1aW11Q3c9P
+ Q==
+
+dn: uid=org1dev2,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1dev2
+sn: org1dev2
+mail: org1dev2@fr.ibm.com
+uid: org1dev2
+userPassword:: e1NTSEF9WWRXK3VNTDVaVlpKcm5xWkIzYmhCaGxsVDN5MTJHUjNDUjY0a3c9P
+ Q==
+
+dn: dc=ibm,dc=com
+objectclass: top
+objectclass: domain
+dc: ibm
+
+dn: uid=org1dev1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1dev1
+sn: org1dev1
+mail: org1dev1@fr.ibm.com
+uid: org1dev1
+userPassword:: e1NTSEF9RWdaaFlHQWlEZHYxcFdyUlVlT3FlV21XMUcra08vZVZicnd6MHc9P
+ Q==
+
+dn: uid=org2dev2,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2dev2
+sn: org2dev2
+mail: org2dev2@fr.ibm.com
+uid: org2dev2
+userPassword:: e1NTSEF9cndpSTYzNVo5R2xJNWc1SkJJYWlrQnhndWp5Y2NhRzBmeFBqa0E9P
+ Q==
+

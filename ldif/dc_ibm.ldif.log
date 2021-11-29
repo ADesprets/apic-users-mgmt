@@ -1,0 +1,327 @@
+version: 1
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.175
+dn: ou=groups,dc=ibm,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: groups
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.192
+dn: uid=cloudowner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: cloudowner1
+sn: cloudowner1
+mail: cloudowner1@fr.ibm.com
+uid: cloudowner1
+userPassword:: e1NTSEF9Ym9PczlqMExFYU9kZVJZUTdNbVFBL3NqNWVUeTdvUmI4V1d2ZWc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.209
+dn: uid=publisher1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: publisher1
+sn: publisher1
+mail: publisher1@fr.ibm.com
+uid: publisher1
+userPassword:: e1NTSEF9Ym9PczlqMExFYU9kZVJZUTdNbVFBL3NqNWVUeTdvUmI4V1d2ZWc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.228
+dn: uid=arnauld,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: arnauld
+sn: arnauld
+mail: arnauld_desprets@fr.ibm.com
+uid: arnauld
+userPassword:: e1NTSEF9THZETUZsZWxQOHZxRWw0RjNEQ0FJVXhFMlpINFJaWk1DZmQ1bGc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.248
+dn: uid=apiadmin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: apiadmin
+sn: apiadmin
+mail: apiadmin@fr.ibm.com
+uid: apiadmin
+userPassword:: e1NTSEF9NjM1Y0JCOHBZeDgxek5lMkExY2hUMDRZTW1sWW5wZll3Sks0YXc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.279
+dn: uid=org2admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2admin
+sn: org2admin
+mail: org2admin@fr.ibm.com
+uid: org2admin
+userPassword:: e1NTSEF9YmpBeThoQXVpTzM5cmZMNFBWK25qMjFUZFJBbmZPcmQ5V0hWMGc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.296
+dn: uid=dev1org2owner,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: dev1org2owner
+sn: dev1org2owner
+mail: dev1org2owner@fr.ibm.com
+uid: dev1org2owner
+userPassword:: e1NTSEF9S25TdGJLeEN0MnNyWjVmS0s0ODl4Mm0xN2IwekpadUpjbUREeUE9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.315
+dn: uid=admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: admin
+sn: admin
+mail: admin@fr.ibm.com
+uid: admin
+userPassword:: e1NTSEF9Sk1aNnBtcmllMm8vY2tVQjIxcFA0ZXBZLzBLTG9TdnFTc2RuOFE9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.347
+dn: uid=org2owner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2owner1
+sn: org2owner1
+mail: org2owner1@fr.ibm.com
+uid: org2owner1
+userPassword:: e1NTSEF9azUyeGVRU3c3QmxPQnd0b1hHeXBaczdKRVRvcEZRWE93VGQ5Znc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.375
+dn: ou=people,dc=ibm,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.393
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 87     Modify Request         Object : 'uid=org1admin,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: org1admin            Modification[2]                 Operation :  replace                 Modification sn: org1admin            Modification[3]                 Operation :  replace                 Modification mail: org1admin@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: org1admin            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x49 0x73 0x6F 0x34 0x69 0x6D 0x49 0x76 0x47 0x4D ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@5a69b38: invalid reuse of password present in password history]
+dn: uid=org1admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1admin
+sn: org1admin
+mail: org1admin@fr.ibm.com
+uid: org1admin
+userPassword:: e1NTSEF9SXNvNGltSXZHTTRRRUdOTnhFVW4vQlQyRDBpb3lnbzdjZFNOTWc9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.418
+dn: cn=org1,ou=groups,dc=ibm,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: org1
+uniqueMember: uid=org1dev1,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org1dev2,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org1admin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org1owner1,ou=people,dc=ibm,dc=com
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.435
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 91     Modify Request         Object : 'uid=myorgowner1,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: myorgowner1            Modification[2]                 Operation :  replace                 Modification sn: myorgowner1            Modification[3]                 Operation :  replace                 Modification mail: myorgowner1@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: myorgowner1            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x4A 0x6C 0x59 0x78 0x32 0x42 0x52 0x66 0x65 0x4B ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@c406a9b0: invalid reuse of password present in password history]
+dn: uid=myorgowner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: myorgowner1
+sn: myorgowner1
+mail: myorgowner1@fr.ibm.com
+uid: myorgowner1
+userPassword:: e1NTSEF9SmxZeDJCUmZlS3RJc1dPSDkxc2FFSG9OaXNqQmpnVDRKcU0rL2c9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.460
+dn: cn=ibm,ou=groups,dc=ibm,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: ibm
+uniqueMember: uid=admin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=apiadmin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=arnauld,ou=people,dc=ibm,dc=com
+uniqueMember: uid=developeur1,ou=people,dc=ibm,dc=com
+uniqueMember: uid=myorgowner1,ou=people,dc=ibm,dc=com
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.481
+dn: cn=org2,ou=groups,dc=ibm,dc=com
+objectClass: groupOfUniqueNames
+objectClass: top
+cn: org2
+uniqueMember: uid=org2admin,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org2owner1,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org2dev2,ou=people,dc=ibm,dc=com
+uniqueMember: uid=org2dev1,ou=people,dc=ibm,dc=com
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.500
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 97     Modify Request         Object : 'uid=org1admin,uid=org1admin,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: org1admin            Modification[2]                 Operation :  replace                 Modification sn: org1admin            Modification[3]                 Operation :  replace                 Modification mail: org1admin@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: org1admin            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x49 0x73 0x6F 0x34 0x69 0x6D 0x49 0x76 0x47 0x4D ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@5090159e: invalid reuse of password present in password history]
+dn: uid=org1admin,uid=org1admin,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1admin
+sn: org1admin
+mail: org1admin@fr.ibm.com
+uid: org1admin
+userPassword:: e1NTSEF9SXNvNGltSXZHTTRRRUdOTnhFVW4vQlQyRDBpb3lnbzdjZFNOTWc9P
+ Q==
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.516
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 99     Modify Request         Object : 'uid=developeur1,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: developeur1            Modification[2]                 Operation :  replace                 Modification sn: developeur1            Modification[3]                 Operation :  replace                 Modification mail: developeur1@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: developeur1            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x72 0x72 0x4F 0x63 0x63 0x78 0x79 0x34 0x79 0x64 ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@672bd14e: invalid reuse of password present in password history]
+dn: uid=developeur1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: developeur1
+sn: developeur1
+mail: developeur1@fr.ibm.com
+uid: developeur1
+userPassword:: e1NTSEF9cnJPY2N4eTR5ZGhveGd6ejgxK1FqTlM1WHVNVFR3SDczQzdNOUE9P
+ Q==
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.537
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 101     Modify Request         Object : 'uid=org1owner1,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: org1owner1            Modification[2]                 Operation :  replace                 Modification sn: org1owner1            Modification[3]                 Operation :  replace                 Modification mail: org1owner1@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: org1owner1            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x6B 0x75 0x69 0x6D 0x67 0x35 0x6B 0x54 0x4A 0x38 ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@6c1e4f5f: invalid reuse of password present in password history]
+dn: uid=org1owner1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1owner1
+sn: org1owner1
+mail: org1owner1@fr.ibm.com
+uid: org1owner1
+userPassword:: e1NTSEF9a3VpbWc1a1RKOGxhYzVNTjRsRFh6WkdYR1hMNDlReHAxOGJqSlE9P
+ Q==
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.554
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 103     Modify Request         Object : 'uid=dev1org1owner,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: dev1org1owner            Modification[2]                 Operation :  replace                 Modification sn: dev1org1owner            Modification[3]                 Operation :  replace                 Modification mail: dev1org1owner@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: dev1org1owner            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x79 0x6E 0x4E 0x6E 0x7A 0x78 0x36 0x68 0x4F 0x31 ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@eadb85f0: invalid reuse of password present in password history]
+dn: uid=dev1org1owner,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: dev1org1owner
+sn: dev1org1owner
+mail: dev1org1owner@fr.ibm.com
+uid: dev1org1owner
+userPassword:: e1NTSEF9eW5Obnp4NmhPMXd4NGdDYWVnbk5zMld5VmxYTUQ3SFg1aW11Q3c9P
+ Q==
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.568
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 105     Modify Request         Object : 'uid=org1dev2,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: org1dev2            Modification[2]                 Operation :  replace                 Modification sn: org1dev2            Modification[3]                 Operation :  replace                 Modification mail: org1dev2@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: org1dev2            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x59 0x64 0x57 0x2B 0x75 0x4D 0x4C 0x35 0x5A 0x56 ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@aab02492: invalid reuse of password present in password history]
+dn: uid=org1dev2,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1dev2
+sn: org1dev2
+mail: org1dev2@fr.ibm.com
+uid: org1dev2
+userPassword:: e1NTSEF9WWRXK3VNTDVaVlpKcm5xWkIzYmhCaGxsVDN5MTJHUjNDUjY0a3c9P
+ Q==
+
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.593
+dn: dc=ibm,dc=com
+objectclass: top
+objectclass: domain
+dc: ibm
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.606
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 109     Modify Request         Object : 'uid=org1dev1,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: org1dev1            Modification[2]                 Operation :  replace                 Modification sn: org1dev1            Modification[3]                 Operation :  replace                 Modification mail: org1dev1@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: org1dev1            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x45 0x67 0x5A 0x68 0x59 0x47 0x41 0x69 0x44 0x64 ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@1e7be9a5: invalid reuse of password present in password history]
+dn: uid=org1dev1,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org1dev1
+sn: org1dev1
+mail: org1dev1@fr.ibm.com
+uid: org1dev1
+userPassword:: e1NTSEF9RWdaaFlHQWlEZHYxcFdyUlVlT3FlV21XMUcra08vZVZicnd6MHc9P
+ Q==
+
+#!RESULT ERROR
+#!CONNECTION ldap://127.0.0.1:10389
+#!DATE 2018-10-24T15:58:03.620
+#!ERROR [LDAP: error code 19 - CONSTRAINT_VIOLATION: failed for MessageType : MODIFY_REQUEST Message ID : 111     Modify Request         Object : 'uid=org2dev2,ou=people,dc=ibm,dc=com'             Modification[0]                 Operation :  replace                 Modification objectClass: organizationalPerson objectClass: person objectClass: inetOrgPerson objectClass: top            Modification[1]                 Operation :  replace                 Modification cn: org2dev2            Modification[2]                 Operation :  replace                 Modification sn: org2dev2            Modification[3]                 Operation :  replace                 Modification mail: org2dev2@fr.ibm.com            Modification[4]                 Operation :  replace                 Modification uid: org2dev2            Modification[5]                 Operation :  replace                 Modification userPassword: 0x7B 0x53 0x53 0x48 0x41 0x7D 0x72 0x77 0x69 0x49 0x36 0x33 0x35 0x5A 0x39 0x47 ...org.apache.directory.api.ldap.model.message.ModifyRequestImpl@7507dee9: invalid reuse of password present in password history]
+dn: uid=org2dev2,ou=people,dc=ibm,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: org2dev2
+sn: org2dev2
+mail: org2dev2@fr.ibm.com
+uid: org2dev2
+userPassword:: e1NTSEF9cndpSTYzNVo5R2xJNWc1SkJJYWlrQnhndWp5Y2NhRzBmeFBqa0E9P
+ Q==
+
